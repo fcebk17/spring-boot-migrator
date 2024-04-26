@@ -67,6 +67,10 @@
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.apache.tomee</groupId>
             <artifactId>javaee-api</artifactId>
             <version>8.0</version>
@@ -74,14 +78,12 @@
             <!--            <version>[8.0,)</version>-->
             <scope>provided</scope>
         </dependency>
-        <!-- openejb (with hibernate) container for running tests -->
         <dependency>
-            <groupId>org.apache.tomee</groupId>
-            <artifactId>openejb-core-hibernate</artifactId>
-            <version>8.0.5</version>
-            <type>pom</type>
-            <scope>test</scope>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>runtime</scope>
         </dependency>
+        <!-- openejb (with hibernate) container for running tests -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
